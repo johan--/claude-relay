@@ -1,0 +1,28 @@
+# codeindex configuration
+# This file defines how the project is indexed for AI agents.
+# Commit this file to git for cross-machine portability.
+
+project:
+  name: claude-relay
+  description: 'claude-relay - TODO: Add description'
+  languages:
+  - javascript
+  frameworks: []
+sources:
+- language: javascript
+areas:
+  core:
+    description: 'Core application logic - TODO: Refine this area'
+    patterns:
+    - '**/app/**'
+    - '**/src/**'
+    - '**/lib/**'
+indexing:
+  exclude:
+  - '**/*.min.js'
+  - '**/*.map'
+  - '**/migrations/**'
+  - '**/seeds/**'
+  - '**/__tests__/**'
+  - '**/*.spec.*'
+  - '**/*.test.*'
